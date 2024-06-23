@@ -1,0 +1,49 @@
+.info {
+    margin-top: 50px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+#height {
+    height: 25px;
+    border-radius: 5px;
+    border: none
+}
+
+#weight {
+    height: 25px;
+    border-radius: 5px;
+    border: none
+}
+
+#calulate {
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    width: 80px;
+}
+
+.result {
+    margin: 20px;
+}
+
+.bmiCal {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+}
+
+th,
+td {
+    padding: 8px 25px;
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+}
