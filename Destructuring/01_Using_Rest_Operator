@@ -1,3 +1,8 @@
 const number = [1, 2, 3];
 console.log(number); // output 1 2 3
 
+// object Rest Operator
+const person = { name: "Rishikesh", age: 23, address: "dkd" };
+const { name, ...rest } = person;
+console.log(name);
+console.log(rest);
