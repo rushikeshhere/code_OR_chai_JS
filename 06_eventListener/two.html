@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>SetTimeOut Function Testing</h1>
+    <button id="btn">Stop
+    </button>
+</body>
+<script>
+    // this is the example of SetInterval which is used to execute the task at specific time
+    // setInterval(() => {
+    //     console.log("Rushikesh")
+    // }, 2000); 
+
+    // it will perform task in the specific time thenafter it will stop
+    // setTimeout(() => {
+    //     console.log("rushikesh");
+    // }, 2000);
+
+    // another way to setTimout 
+    const sayRishi = function () {
+        console.log("hi rishi");
+    }
+    setTimeout(sayRishi, 2000)
+
+    // normal way to change or changing the h1 tag info
+    // document.querySelector("h1").innerHTML = "Best js series by hitesh choudhari"
+
+    // i can change the h1 tag info using setTimeOut
+    function changeMe() {
+        document.querySelector("h1").innerHTML = "Best js Series on youtube by Hitesh sir"
+    }
+    const stopChangingContent = setTimeout(changeMe, 3000);
+    // i want to stop changing content of h1 tag
+
+    // how to stop ,using stop button
+
+    document.querySelector("#btn").addEventListener("click", () => {
+        clearTimeout(stopChangingContent)
+        console.log("Stoped");
+    })
+
+
+</script>
+
+</html>

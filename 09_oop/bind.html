@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind Example</title>
+    <style>
+        button {
+            width: 150px;
+            height: 50px;
+            border-radius: 7px;
+            font-size: 25px;
+            background-color: blanchedalmond;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click Button</button>
+</body>
+
+<script>
+
+    class React {
+        constructor() {
+            this.library = "React";
+            this.server = "https://localhost:3000/";
+
+            // bind data 
+            document
+                .querySelector("button")
+                .addEventListener("click", this.handleClick.bind(this))
+        }
+        handleClick() {
+            console.log("button clicked");
+            console.log(this);
+        }
+    }
+    const react = new React();
+</script>
+
+</html>

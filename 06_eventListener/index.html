@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study of event Listner</title>
+    <style>
+        #images {
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body style="background-color: #414141; color: white;">
+    <ul id="images">
+        <li><img width="200px"
+                src="https://images.pexels.com/photos/19915666/pexels-photo-19915666/free-photo-of-back-view-of-man-walking-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt="photo"></li>
+        <li><img width="200px"
+                src="https://images.pexels.com/photos/21937092/pexels-photo-21937092.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""></li>
+        <li><img width="200px"
+                src="https://images.pexels.com/photos/16848795/pexels-photo-16848795/free-photo-of-relaxation-in-luxembourg-garden.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""></li>
+        <li><img width="200px"
+                src="https://images.pexels.com/photos/23247658/pexels-photo-23247658/free-photo-of-a-group-of-birch-trees-in-a-forest.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""></li>
+        <li><img width="200px"
+                src="https://images.pexels.com/photos/26077133/pexels-photo-26077133/free-photo-of-herd-of-antelopes-in-nature.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                alt=""></li>
+        <li><a style="color: white;" href="http://google.com">Google</a></li>
+    </ul>
+    <script>
+
+        const images = document.querySelector("#images");
+        images.addEventListener("click", (e) => {
+            console.log(e.target.tagName);
+            // checked Condition to remove image
+            // if image tag is matches with "IMG" tag then it will remove image
+            if (e.target.tagName === "IMG") {
+                let removeIt = e.target.parentNode;
+                removeIt.remove();
+            }
+
+        })
+
+    </script>
+</body>
+
+</html>

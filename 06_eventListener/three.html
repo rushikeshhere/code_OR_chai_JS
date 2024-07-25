@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Learn java Script</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+
+<script>
+    let interval;
+    const startChangingh1 = function () {
+
+        document.querySelector("h1").innerHTML = "Learn javaScript by Hitesh Sir";
+    }
+    document.querySelector("#start").addEventListener("click", () => {
+        console.log("started");
+        interval = setInterval(startChangingh1, 3000)
+    })
+    document.querySelector("#stop").addEventListener("click", () => {
+        console.log("stopeed");
+        clearInterval(interval)
+    })
+
+
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,35 @@
+.canvas {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    height: 250px;
+}
+
+.button {
+    display: inline-flex;
+    margin: 30px 0px 15px 15px;
+    border-style: solid;
+    width: 60px;
+    height: 60px;
+    border-radius: 7px;
+}
+
+#grey {
+    background-color: rgb(98, 99, 98);
+}
+
+#white {
+    background-color: white;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
